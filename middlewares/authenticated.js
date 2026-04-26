@@ -1,7 +1,7 @@
 const dayjs = require("dayjs");//Sutituyo moment por dayjs
 const jwt = require("../services/jwt");
 
-const SECRET_KEY = "Jpoiua885kjs8OD8lksjdjkf984jg8ña";
+const SECRET_KEY = process.env.JWT_SECRET;
 
 function ensureAuth(req, res, next) {
     if(!req.headers.authorization) {
