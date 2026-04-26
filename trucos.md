@@ -1,0 +1,2 @@
+En la página jwt.io puedes pegar tus tokens para ver si todo ha ido bien. Debido a que se pueden decodificar tan facilmente, nunca se debe de poner información sensible en estos, como por ejemplo las contraseñas.
+https://www.jwt.io/
