@@ -1,3 +1,5 @@
+require('dotenv').config();
+console.log(process.env.JWT_SECRET);
 const mongoose = require("mongoose");
 const app = require("./app.js");
 //const port = 3000; De normal puedo usar esto
