@@ -34,3 +34,12 @@ Realizado en base a un curso, este proyecto ha sido actualizado con tecnologías
 ##  Funcionalidades
 - **Users**: Registro, Login y gestión de perfil (Avatar).
 - **Tasks**: CRUD completo (Crear, Leer, Actualizar y Borrar tareas) vinculado al usuario autenticado.
+
+##  Pruebas con Insomnia
+
+Para facilitar las pruebas de la API, se incluye una colección con todas las peticiones listas para importar (Users y Tasks).
+
+1. Descarga el archivo que se encuentra en: [`/docs/Insomnia_collection.yaml`](./docs/Insomnia_collection.yaml)
+2. Abre **Insomnia**.
+3. Haz clic en **Import** -> **File** y selecciona el archivo descargado.
+
