@@ -1,0 +1,346 @@
+type: collection.insomnia.rest/5.0
+schema_version: "5.1"
+name: Scratch Pad
+meta:
+  id: wrk_scratchpad
+  created: 1776597393041
+  modified: 1776597393041
+  description: ""
+collection:
+  - name: Curso_apirest_part1
+    meta:
+      id: fld_f3589a666f8640d29922ef99f6c2db6e
+      created: 1776935461482
+      modified: 1776935461482
+      sortKey: -1776935461482
+      description: ""
+    children:
+      - url: http://localhost:3000/api/hello
+        name: Tarea primera
+        meta:
+          id: req_6da7a56bc48d4ebcb14d70ddc3208e86
+          created: 1776599331223
+          modified: 1776935479765
+          isPrivate: false
+          description: ""
+          sortKey: -1776935466847.5
+        method: GET
+        headers:
+          - name: User-Agent
+            value: insomnia/12.5.0
+            description: ""
+            disabled: false
+        settings:
+          renderRequestBody: true
+          encodeUrl: true
+          followRedirects: global
+          cookies:
+            send: true
+            store: true
+          rebuildPath: true
+      - url: http://localhost:3000/api/task
+        name: createTask
+        meta:
+          id: req_d8deb99ef66c4699b5d491736e1efcc8
+          created: 1776756755210
+          modified: 1776935478235
+          isPrivate: false
+          description: ""
+          sortKey: -1776935466860
+        method: POST
+        body:
+          mimeType: application/json
+          text: >-
+            {
+              "title": "Titulo de la tarea",
+              "description": "Aquí puedes escribir la descripción que quieras. Hola, soy una descripción."
+            }
+        headers:
+          - name: Content-Type
+            value: application/json
+          - name: User-Agent
+            value: insomnia/12.5.0
+            description: ""
+            disabled: false
+        settings:
+          renderRequestBody: true
+          encodeUrl: true
+          followRedirects: global
+          cookies:
+            send: true
+            store: true
+          rebuildPath: true
+      - url: http://localhost:3000/api/task
+        name: getTasks
+        meta:
+          id: req_8689762be1d343c6a57646c8fadef597
+          created: 1776763488432
+          modified: 1776935476607
+          isPrivate: false
+          description: ""
+          sortKey: -1776935466835
+        method: GET
+        headers:
+          - name: User-Agent
+            value: insomnia/12.5.0
+            description: ""
+            disabled: false
+        settings:
+          renderRequestBody: true
+          encodeUrl: true
+          followRedirects: global
+          cookies:
+            send: true
+            store: true
+          rebuildPath: true
+      - url: http://localhost:3000/api/task/escribe_tu_id_aqui
+        name: getTaskById
+        meta:
+          id: req_eeb8fa294fb74a5bb12a784c69365206
+          created: 1776765584028
+          modified: 1776935474804
+          isPrivate: false
+          description: ""
+          sortKey: -1776935466885
+        method: GET
+        headers:
+          - name: User-Agent
+            value: insomnia/12.5.0
+            description: ""
+            disabled: false
+        settings:
+          renderRequestBody: true
+          encodeUrl: true
+          followRedirects: global
+          cookies:
+            send: true
+            store: true
+          rebuildPath: true
+      - url: http://localhost:3000/api/task/escribe_tu_id_aqui
+        name: updateTaskById
+        meta:
+          id: req_6d6a872f79784573b85f62fbb350c357
+          created: 1776766239175
+          modified: 1776935472335
+          isPrivate: false
+          description: ""
+          sortKey: -1776935466785
+        method: PUT
+        body:
+          mimeType: application/json
+          text: >-
+            {
+              "title": "Tarea modificada",
+              "description": "Otro ejemplo de tarea y de descripción."
+            }
+        headers:
+          - name: Content-Type
+            value: application/json
+          - name: User-Agent
+            value: insomnia/12.5.0
+            description: ""
+            disabled: false
+        settings:
+          renderRequestBody: true
+          encodeUrl: true
+          followRedirects: global
+          cookies:
+            send: true
+            store: true
+          rebuildPath: true
+      - url: http://localhost:3000/api/task/escribe_tu_id_aqui
+        name: deleteTask
+        meta:
+          id: req_e6a1d61fed064c818100555bd00a72a0
+          created: 1776767231500
+          modified: 1776935466704
+          isPrivate: false
+          description: ""
+          sortKey: -1776935466685
+        method: DELETE
+        headers:
+          - name: User-Agent
+            value: insomnia/12.5.0
+            description: ""
+            disabled: false
+        settings:
+          renderRequestBody: true
+          encodeUrl: true
+          followRedirects: global
+          cookies:
+            send: true
+            store: true
+          rebuildPath: true
+  - name: Curso_jwt
+    meta:
+      id: fld_bab2db205ec245a091cbbbf18cbfa6bf
+      created: 1776935505492
+      modified: 1776935505492
+      sortKey: -1776935505492
+      description: ""
+    children:
+      - url: http://localhost:3000/api/register
+        name: Register
+        meta:
+          id: req_9ddf21b0c3cb481b97a46dee361f639e
+          created: 1776935549573
+          modified: 1776975632926
+          isPrivate: false
+          description: ""
+          sortKey: -1776935549573
+        method: POST
+        body:
+          mimeType: application/json
+          text: |-
+            {
+            	"email": "Emaildementira@hotmail.com",
+            	"password": "654321"
+            }
+        headers:
+          - name: Content-Type
+            value: application/json
+          - name: User-Agent
+            value: insomnia/12.5.0
+            description: ""
+            disabled: false
+        settings:
+          renderRequestBody: true
+          encodeUrl: true
+          followRedirects: global
+          cookies:
+            send: true
+            store: true
+          rebuildPath: true
+      - url: http://localhost:3000/api/login
+        name: login
+        meta:
+          id: req_9db5d7e234ac4f32b7229e2956d5ec03
+          created: 1777025143562
+          modified: 1777028679921
+          isPrivate: false
+          description: ""
+          sortKey: -1777025143562
+        method: POST
+        body:
+          mimeType: application/json
+          text: |-
+            {
+            	"email": "Emaildementira@hotmail.com",
+            	"password": "654321"
+            }
+        headers:
+          - name: Content-Type
+            value: application/json
+          - name: User-Agent
+            value: insomnia/12.5.0
+            description: ""
+            disabled: false
+        settings:
+          renderRequestBody: true
+          encodeUrl: true
+          followRedirects: global
+          cookies:
+            send: true
+            store: true
+          rebuildPath: true
+      - url: http://localhost:3000/api/protected
+        name: Protected_Test
+        meta:
+          id: req_9b2387a8d1284d898c1b71a2fafa6262
+          created: 1777029405483
+          modified: 1777196692891
+          isPrivate: false
+          description: ""
+          sortKey: -1777029405483
+        method: GET
+        headers:
+          - name: User-Agent
+            value: insomnia/12.5.0
+            description: ""
+            disabled: false
+          - name: Authorization
+            value: Escribe_aqui_token_generado
+            description: ""
+            disabled: false
+        settings:
+          renderRequestBody: true
+          encodeUrl: true
+          followRedirects: global
+          cookies:
+            send: true
+            store: true
+          rebuildPath: true
+      - url: http://localhost:3000/api/upload-avatar/escribe_id_usuario
+        name: uploadAvatar
+        meta:
+          id: req_8e597346840d41608623ef42a381d0ad
+          created: 1777033740548
+          modified: 1777034944360
+          isPrivate: false
+          description: ""
+          sortKey: -1777033740548
+        method: PUT
+        body:
+          mimeType: multipart/form-data
+          params:
+            - name: avatar
+              value: ""
+              description: ""
+              disabled: false
+              fileName: C:\Users\pablo\Desktop\avatar.png
+              type: file
+        headers:
+          - name: Content-Type
+            value: multipart/form-data
+          - name: User-Agent
+            value: insomnia/12.5.0
+            description: ""
+            disabled: false
+          - name: Authorization
+            value: escribe_el_token
+            description: ""
+            disabled: false
+        settings:
+          renderRequestBody: true
+          encodeUrl: true
+          followRedirects: global
+          cookies:
+            send: true
+            store: true
+          rebuildPath: true
+      - url: http://localhost:3000/api/avatar/nombre_de_la_imagen
+        name: getAvatar
+        meta:
+          id: req_b153741307f34f19ba17e0152e75f183
+          created: 1777193158993
+          modified: 1777193635722
+          isPrivate: false
+          description: ""
+          sortKey: -1777193158993
+        method: GET
+        headers:
+          - name: User-Agent
+            value: insomnia/12.5.0
+            description: ""
+            disabled: false
+        settings:
+          renderRequestBody: true
+          encodeUrl: true
+          followRedirects: global
+          cookies:
+            send: true
+            store: true
+          rebuildPath: true
+cookieJar:
+  name: Default Jar
+  meta:
+    id: jar_99d30891da4bdcebc63947a8fc17f076de878684
+    created: 1776597414496
+    modified: 1776597414496
+environments:
+  name: Base Environment
+  meta:
+    id: env_99d30891da4bdcebc63947a8fc17f076de878684
+    created: 1776597414488
+    modified: 1776597414488
+    isPrivate: false
